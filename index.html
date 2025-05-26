@@ -3,11 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Aws Falah - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/simplifica" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    <h1>hello</h1>
-    <script src="script.js"></script>
+<body class="bg-dark text-white">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #FFD700;">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand text-dark fw-bold" href="#intro" style="font-family: 'Comic Sans MS', cursive;">AF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#about" style="font-family: 'Comic Sans MS', cursive;">
+                            <i class="bi bi-person-circle me-2"></i>About Me
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#work" style="font-family: 'Comic Sans MS', cursive;">
+                            <i class="bi bi-gear-fill me-2"></i>How You Work
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#projects" style="font-family: 'Comic Sans MS', cursive;">
+                            <i class="bi bi-folder-fill me-2"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#footer" style="font-family: 'Comic Sans MS', cursive;">
+                            <i class="bi bi-envelope-fill me-2"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Intro Section -->
+        <section id="intro" class="intro min-vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 class="display-1 fw-bold" style="font-family: 'Times New Roman', Times, serif;">Aws Falah</h1>
+            <h2 class="display-4" style="font-family: 'Times New Roman', Times, serif;">Portfolio</h2>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about py-5 my-5 text-center">
+            <h2 class="display-1 fw-bold mb-4" style="font-family: 'Times New Roman', Times, serif;">About Me</h2>
+            <p class="lead mx-auto" style="max-width: 600px; font-family: 'Comic Sans MS', cursive;">
+                Welcome to my portfolio website. I am a second year Software Engineering student at the 
+                University of Ottawa, and currently working at Global Affairs Canada as a Business Intelligence Programmer.
+                I'm a passionate developer creating amazing digital experiences.
+            </p>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <h2 class="display-4 text-center mb-5" style="font-family: 'Times New Roman', Times, serif;">Experience</h2>
+                <div class="work-grid">
+                    <div class="work-item">
+                        <h4 style="font-family: 'Comic Sans MS', cursive;">Portfolio Website (SEG 3125)</h4>
+                        <p style="font-family: 'Comic Sans MS', cursive;">Creating beautiful and functional user interfaces to enhance my skills in web development.</p>
+                    </div>
+                    <div class="work-item">
+                        <h4 style="font-family: 'Comic Sans MS', cursive;">PrivaC (SEG 2900)</h4>
+                        <p style="font-family: 'Comic Sans MS', cursive;">Built a website for my product, using html, css, and javascript.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section py-5 my-5">
+            <h2 class="display-1 fw-bold text-center mb-5" style="font-family: 'Times New Roman', Times, serif;">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <a href="service-site.html" class="text-decoration-none">
+                        <div class="card bg-dark border-0 h-100 project-box">
+                            <div class="project-image service-site">
+                                <img src="images/service-site.jpg" class="card-img-top" alt="Service Site Preview">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title text-warning" style="font-family: 'Comic Sans MS', cursive;">Service Site</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="small-game.html" class="text-decoration-none">
+                        <div class="card bg-dark border-0 h-100 project-box">
+                            <div class="project-image small-game">
+                                <img src="images/small-game.jpg" class="card-img-top" alt="Small Game Preview">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title text-warning" style="font-family: 'Comic Sans MS', cursive;">Small Game</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="ecommerce.html" class="text-decoration-none">
+                        <div class="card bg-dark border-0 h-100 project-box">
+                            <div class="project-image ecommerce">
+                                <img src="images/ecommerce.jpg" class="card-img-top" alt="E-Commerce Site Preview">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title text-warning" style="font-family: 'Comic Sans MS', cursive;">E-Commerce Site</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="analytics.html" class="text-decoration-none">
+                        <div class="card bg-dark border-0 h-100 project-box">
+                            <div class="project-image analytics">
+                                <img src="images/analytics.jpg" class="card-img-top" alt="Analytics Site Preview">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title text-warning" style="font-family: 'Comic Sans MS', cursive;">Analytics Site</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer py-5 mt-5" style="background-color: #2a2a2a;">
+        <div class="container text-center">
+            <h3 class="text-warning mb-4" style="font-family: 'Times New Roman', Times, serif;">Contact Me</h3>
+            <a href="mailto:awsfalah31@gmail.com" class="text-warning text-decoration-none mb-4 d-inline-block" style="font-family: 'Comic Sans MS', cursive;">awsfalah31@gmail.com</a>
+            <div class="social-links mt-4">
+                <a href="https://github.com/AwsFalah24" target="_blank" class="text-warning mx-3"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/aws-falah-398024288/" target="_blank" class="text-warning mx-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = targetPosition - navbarHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections that should fade in
+        document.querySelectorAll('.about, .work-section, .projects-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html> 

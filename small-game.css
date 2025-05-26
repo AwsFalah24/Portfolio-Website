@@ -1,0 +1,37 @@
+.coming-soon {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.coming-soon h1 {
+    font-size: 4rem;
+    color: var(--primary-yellow);
+    margin-bottom: 1rem;
+    font-family: 'Simplifica', sans-serif;
+}
+
+.coming-soon p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    background: var(--primary-yellow);
+    color: var(--dark-bg);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+} 
