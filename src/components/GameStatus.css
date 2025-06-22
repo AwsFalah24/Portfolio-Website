@@ -1,0 +1,24 @@
+.game-status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.status-box {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.pairs-box {
+  background-color: #3a3d52;
+  color: #ffffff;
+}
+
+.attempts-box {
+  background-color: #ffffff;
+  color: #000000;
+} 
